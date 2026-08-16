@@ -41,7 +41,17 @@ export default function Home() {
               <a href="#about">About</a>
               <a href="#work">Work</a>
               <a href="#ideas">Ideas</a>
-              <a href="#contact">Contact</a>
+              <a href="#contact">
+  Start a conversation
+</a>
+
+<a
+  href="https://docs.google.com/forms/d/e/1FAIpQLScN51Mf8s36dlDEeCgwS4Eaq2Qy_LbVR2wi6epASZLfdOGFcg/viewform"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Join Nakuwa <Arrow />
+</a>
             </nav>
           </details>
 
