@@ -12,6 +12,20 @@ export default function Home() {
             />
           </a>
 
+          <div className="header-actions">
+  <a className="header-contact" href="#contact">
+    Start a conversation
+  </a>
+
+  <a
+    className="header-cta"
+    href="https://docs.google.com/forms/d/e/1FAIpQLScN51Mf8s36dlDEeCgwS4Eaq2Qy_LbVR2wi6epASZLfdOGFcg/viewform"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Join Nakuwa <Arrow />
+  </a>
+</div>
           <nav className="desktop-nav" aria-label="Primary navigation">
             <a href="#about">About</a>
             <a href="#work">Work</a>
