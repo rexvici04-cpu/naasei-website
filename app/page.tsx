@@ -55,10 +55,57 @@ export default function Home() {
             </nav>
           </details>
 
-          <a className="header-cta" href="#contact">
-            Start a conversation <Arrow />
-          </a>
-        </header>
+         <header className="site-header">
+  <a className="brand" href="#home" aria-label="NaaSei — home">
+    <img
+      src="/assets/brand/NaaSei_Primary_Horizontal_Ivory.svg"
+      alt="NaaSei"
+    />
+  </a>
+
+  <nav className="desktop-nav" aria-label="Primary navigation">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#ideas">Ideas</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <details className="mobile-menu">
+    <summary>
+      Menu <span aria-hidden="true">+</span>
+    </summary>
+
+    <nav aria-label="Mobile navigation">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#ideas">Ideas</a>
+      <a href="#contact">Start a conversation</a>
+
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLScN51Mf8s36dlDEeCgwS4Eaq2Qy_LbVR2wi6epASZLfdOGFcg/viewform"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Join Nakuwa <Arrow />
+      </a>
+    </nav>
+  </details>
+
+  <div className="header-actions">
+    <a
+      className="header-join"
+      href="https://docs.google.com/forms/d/e/1FAIpQLScN51Mf8s36dlDEeCgwS4Eaq2Qy_LbVR2wi6epASZLfdOGFcg/viewform"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Join Nakuwa <Arrow />
+    </a>
+
+    <a className="header-cta" href="#contact">
+      Start a conversation <Arrow />
+    </a>
+  </div>
+</header>
 
         <div className="hero-grid">
           <div className="hero-copy">
