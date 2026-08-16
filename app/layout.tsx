@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "NaaSei — Build Beyond Your Beginning",
   description:
-    "NaaSei builds leverage for people and organisations capable of more than their current conditions allow.",
+    "NaaSei helps people, ventures and organisations turn possibility into progress through strategy, innovation, communication and entrepreneurship.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

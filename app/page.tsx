@@ -1,558 +1,67 @@
+import ExpertiseCarousel from "./ExpertiseCarousel";
+
 const Arrow = () => <span aria-hidden="true">↗</span>;
+
+const nakuwaForm = "https://docs.google.com/forms/d/e/1FAIpQLScN51Mf8s36dlDEeCgwS4Eaq2Qy_LbVR2wi6epASZLfdOGFcg/viewform";
 
 export default function Home() {
   return (
     <main>
       <section className="hero" id="home" aria-labelledby="hero-title">
         <header className="site-header">
-          <a className="brand" href="#home" aria-label="NaaSei — home">
-            <img
-              src="/assets/brand/NaaSei_Primary_Horizontal_Ivory.svg"
-              alt="NaaSei"
-            />
-          </a>
-
-          <nav className="desktop-nav" aria-label="Primary navigation">
-            <a href="#about">About</a>
-            <a href="#work">Work</a>
-            <a href="#ideas">Ideas</a>
-            <a href="#contact">Contact</a>
-          </nav>
-
-          <details className="mobile-menu">
-            <summary>
-              Menu <span aria-hidden="true">+</span>
-            </summary>
-
-            <nav aria-label="Mobile navigation">
-              <a href="#about">About</a>
-              <a href="#work">Work</a>
-              <a href="#ideas">Ideas</a>
-              <a href="#contact">Start a conversation</a>
-
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLScN51Mf8s36dlDEeCgwS4Eaq2Qy_LbVR2wi6epASZLfdOGFcg/viewform"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Join Nakuwa <Arrow />
-              </a>
-            </nav>
-          </details>
-
-          <div className="header-actions">
-            <a
-              className="header-join"
-              href="https://docs.google.com/forms/d/e/1FAIpQLScN51Mf8s36dlDEeCgwS4Eaq2Qy_LbVR2wi6epASZLfdOGFcg/viewform"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Join Nakuwa <Arrow />
-            </a>
-
-            <a className="header-cta" href="#contact">
-              Start a conversation <Arrow />
-            </a>
-          </div>
+          <a className="brand" href="#home" aria-label="NaaSei — home"><img src="/assets/brand/NaaSei_Primary_Horizontal_Ivory.svg" alt="NaaSei" /></a>
+          <nav className="desktop-nav" aria-label="Primary navigation"><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#work">Work</a><a href="#ventures">Ventures</a></nav>
+          <details className="mobile-menu"><summary>Menu <span aria-hidden="true">+</span></summary><nav aria-label="Mobile navigation"><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#work">Selected work</a><a href="#ventures">Ventures</a><a href="#contact">Work with me</a><a href={nakuwaForm} target="_blank" rel="noopener noreferrer">Join Nakuwa <Arrow /></a></nav></details>
+          <div className="header-actions"><a className="header-community" href={nakuwaForm} target="_blank" rel="noopener noreferrer">Join Nakuwa</a><a className="header-cta" href="#contact">Work with me <Arrow /></a></div>
         </header>
 
         <div className="hero-grid">
-          <div className="hero-copy">
-            <p className="eyebrow">
-              <span />
-              Innovation · Purpose · Leadership
-            </p>
-
-            <h1 id="hero-title">
-              Build beyond
-              <em>your beginning.</em>
-            </h1>
-
-            <p className="hero-summary">
-              I build leverage for people and organisations capable of more
-              than their current conditions allow.
-            </p>
-
-            <div className="hero-actions">
-              <a className="button button-gold" href="#work">
-                Explore the work <Arrow />
-              </a>
-
-              <a className="text-link" href="#about">
-                Read my story <span aria-hidden="true">↓</span>
-              </a>
-            </div>
-          </div>
-
-          <div className="hero-visual" aria-label="Portrait of NaaSei">
-            <div className="symbol-halo" aria-hidden="true">
-              <img
-                src="/assets/brand/NaaSei_Adinkrahene_Gold.svg"
-                alt=""
-              />
-            </div>
-
-            <div className="portrait-frame">
-              <img
-                className="hero-portrait"
-                src="/assets/images/naasei-portrait.webp"
-                alt="NaaSei in a dark suit, standing with his arms folded"
-              />
-            </div>
-
-            <div className="proof-note">
-              <span className="proof-index">01</span>
-              <p>
-                From welding
-                <strong>to building systems.</strong>
-              </p>
-            </div>
-          </div>
+          <div className="hero-copy"><p className="eyebrow"><span />Michael Osei Aboagye · NaaSei</p><h1 id="hero-title">Build beyond<em>your beginning.</em></h1><p className="hero-summary">I help people, ventures and organisations give promising ideas clarity, structure, a compelling story and the momentum to move.</p><p className="hero-role">Strategy · Innovation · Communication · Entrepreneurship</p><div className="hero-actions"><a className="button button-gold" href="#work">Explore my work <Arrow /></a><a className="text-link" href="#about">Meet NaaSei <span aria-hidden="true">↓</span></a></div></div>
+          <div className="hero-visual" aria-label="Portrait of NaaSei"><div className="symbol-halo" aria-hidden="true"><img src="/assets/brand/NaaSei_Adinkrahene_Gold.svg" alt="" /></div><div className="portrait-frame"><img className="hero-portrait" src="/assets/images/naasei-portrait.webp" alt="NaaSei in a dark suit" /></div><div className="hero-note"><span>My through-line</span><p>See potential. Give it structure. Help it move.</p></div></div>
         </div>
-
-        <div className="hero-footer" aria-hidden="true">
-          <span>Accra, Ghana</span>
-          <span className="hero-line" />
-          <span>Scroll to become</span>
-        </div>
+        <div className="hero-footer" aria-hidden="true"><span>Accra, Ghana</span><span className="hero-line" /><span>Innovation · Purpose · Leadership</span></div>
       </section>
 
-      <section
-        className="manifesto"
-        id="about"
-        aria-labelledby="manifesto-title"
-      >
-        <div className="section-label">
-          <span>02</span>
-          <p>The belief</p>
-        </div>
+      <section className="proof-strip" aria-label="Professional proof">
+        <div><strong>50+</strong><span>student entrepreneurs coached in pitching</span></div><div><strong>100+</strong><span>startup pitches evaluated across competitions</span></div><div><strong>3</strong><span>startups currently mentored at the DTI Innovation Hub</span></div><div><strong>2</strong><span>Thinking Labs facilitated for leadership and strategy</span></div>
+      </section>
 
-        <div className="manifesto-content">
-          <h2 id="manifesto-title">
-            Your beginning is context.
-            <span>Not destiny.</span>
-          </h2>
-
-          <div className="manifesto-detail">
-            <p>
-              Human potential is far greater than most systems allow. The gap
-              between what young Africans can do and what they achieve is not a
-              talent deficit. It is a design problem.
-            </p>
-
-            <a className="text-link dark-link" href="#work">
-              See how I build leverage <Arrow />
-            </a>
-          </div>
-        </div>
-
-        <div className="manifesto-proof">
-          <article>
-            <span>01</span>
-            <h3>Craft</h3>
-            <p>TVET-trained in welding and fabrication.</p>
-          </article>
-
-          <article>
-            <span>02</span>
-            <h3>Systems</h3>
-            <p>Governance, platforms and programmes built beyond title.</p>
-          </article>
-
-          <article>
-            <span>03</span>
-            <h3>Enterprise</h3>
-            <p>Muhalli, Plasture™ and product ideas made tangible.</p>
-          </article>
-
-          <article>
-            <span>04</span>
-            <h3>Legacy</h3>
-            <p>People and institutions equipped to continue without me.</p>
-          </article>
-        </div>
+      <section className="about" id="about" aria-labelledby="about-title">
+        <div className="section-label"><span>01</span><p>One person. One through-line.</p></div>
+        <div className="about-grid"><h2 id="about-title">The work changes.<span>What I bring remains the same.</span></h2><div className="about-copy"><p className="lead">I am naturally drawn to potential: the promising idea that has not been clearly expressed, the young person who has not yet recognised what they carry, or the organisation with an important ambition but no practical structure for moving it forward.</p><p>My work is to help make that potential clearer, stronger and more actionable. Sometimes that means designing a programme. Sometimes it means strengthening a business idea, shaping a story, facilitating a difficult conversation or helping a team move from scattered thinking to shared direction.</p><p>The contexts change, but the process remains consistent.</p></div></div>
+        <div className="process" aria-label="NaaSei's working process">{["Possibility", "Clarity", "Strategy", "Story", "Action", "Growth"].map((step, index) => <div key={step}><span>0{index + 1}</span><strong>{step}</strong></div>)}</div>
+        <div className="current-grid"><article><span>At DTI</span><h3>Alumni Communications &amp; Engagement</h3><p>Building the systems through which DTI understands, communicates with and creates sustained value for its growing alumni community.</p></article><article><span>Youth agency</span><h3>Component 4 Lead</h3><p>Leading Youth Voices and Agency in TVET under the DTI × Mastercard Foundation Partnership.</p></article><article><span>Enterprise</span><h3>Muhalli Co-founder</h3><p>Building a product-design and manufacturing studio rooted in practical innovation and circularity.</p></article><article><span>Education</span><h3>UPSA Student</h3><p>Pursuing a university degree while continuing to work, build and lead full-time.</p></article></div>
       </section>
 
       <section className="story" aria-labelledby="story-title">
-        <div className="story-image-wrap">
-          <img
-            src="/assets/images/naasei-speaking.webp"
-            alt="NaaSei speaking to a group in Accra"
-            loading="lazy"
-          />
+        <div className="story-image-wrap"><img src="/assets/images/naasei-reflective.webp" alt="NaaSei listening during an industry and education roundtable" loading="lazy" /><div className="story-caption"><span>Konongo → Accra</span><p>Faith. Hunger. Learning. Work.</p></div></div>
+        <div className="story-copy"><div className="section-label light-label"><span>02</span><p>What shaped the work</p></div><h2 id="story-title">I know what it means to have potential<span>without a clear pathway.</span></h2><p className="story-lead">I grew up as one of six children. When my father retired, the stability our family had known disappeared, and my mother carried the weight of keeping us together.</p><p>By Junior High School, the pressure had entered every part of our lives. I dropped out for a period and painted houses to earn money. I later returned to school, completed SHS and entered another season where university was financially out of reach and I had to live with a friend.</p><p>A job at an internet café became an unexpected classroom. I used the quiet hours to teach myself through the internet. Later, a DTI scholarship gave me access to welding and fabrication, innovation, entrepreneurship and leadership. It did more than give me a skill; it changed what I believed I could become.</p><p>After graduation, a startup funding setback led to delivery riding, volunteering and another season of self-directed learning. The volunteering eventually became full-time professional work at DTI.</p><blockquote>“My experience taught me that potential rarely fails because it is absent. It stalls when access, language, structure and opportunity are missing.”</blockquote><p>My faith has been central throughout this journey. It is not an accessory to my ambition. It is the foundation that gives the ambition direction, discipline and responsibility.</p><p className="story-close">I now build the pathways I once needed.</p></div>
+      </section>
 
-          <div className="story-caption">
-            <span>Konongo → Accra</span>
-            <p>Grace. Hunger. Work.</p>
-          </div>
-        </div>
-
-        <div className="story-copy">
-          <div className="section-label light-label">
-            <span>03</span>
-            <p>The story</p>
-          </div>
-
-          <h2 id="story-title">
-            Welding shaped
-            <span>the way I lead.</span>
-          </h2>
-
-          <p className="story-lead">
-            Before the boardroom, there was the workshop: heat, measurement,
-            repetition and the humility to begin again.
-          </p>
-
-          <p>
-            I came through technical and vocational education before university.
-            That journey taught me that potential is often present long before
-            opportunity can see it. Today, I carry the maker&apos;s discipline
-            into governance, programme design, technology and enterprise.
-          </p>
-
-          <blockquote>
-            “I am proof that where you start does not determine where you land.”
-          </blockquote>
-
-          <div className="story-signature">
-            <div>
-              <strong>Michael Osei Aboagye</strong>
-              <span>NaaSei · Rex</span>
-            </div>
-
-            <img
-              src="/assets/brand/NaaSei_Adinkrahene_Gold.svg"
-              alt=""
-              aria-hidden="true"
-            />
-          </div>
-        </div>
+      <section className="expertise" id="expertise" aria-labelledby="expertise-title">
+        <div className="expertise-heading"><div className="section-label"><span>03</span><p>How I create value</p></div><h2 id="expertise-title">From intention<span>to execution.</span></h2><p>Five connected capabilities help me clarify what people are trying to achieve, build the right approach and communicate it effectively.</p></div>
+        <ExpertiseCarousel />
       </section>
 
       <section className="work" id="work" aria-labelledby="work-title">
-        <div className="work-heading">
-          <div className="section-label">
-            <span>04</span>
-            <p>Selected work</p>
-          </div>
+        <div className="work-heading"><div className="section-label inverse-label"><span>04</span><p>Selected work</p></div><h2 id="work-title">The work<span>is the evidence.</span></h2><p>Selected contributions across youth development, education and enterprise.</p></div>
 
-          <h2 id="work-title">
-            Leverage,
-            <span>made visible.</span>
-          </h2>
+        <article className="case"><div className="case-image youth-case-image"><img src="/assets/images/naasei-youth-dialogue.webp" alt="NaaSei in dialogue with young people" loading="lazy" /><span>01</span></div><div className="case-content"><p className="case-kicker">Youth development · Participation</p><h3>Youth Voices and Agency in TVET</h3><p className="case-lead">Young people should help shape the systems designed for them.</p><p>As lead for Component 4 under the DTI × Mastercard Foundation Partnership, I contribute to structures and initiatives that move youth participation beyond attendance toward representation, co-creation and influence.</p><div className="case-path">Representation → Voice → Participation → Co-creation → Influence</div><p className="case-audience">For development partners, TVET institutions, youth organisations, foundations and policy actors.</p><a href="#contact">Discuss a youth-development partnership <Arrow /></a></div></article>
 
-          <p>
-            I work where people, systems and possibility meet—turning ambiguity
-            into structures that can move.
-          </p>
-        </div>
+        <article className="case case-reverse"><div className="case-image facilitation-case-image"><img src="/assets/images/naasei-facilitating.webp" alt="NaaSei presenting a leadership and programme framework" loading="lazy" /><span>02</span></div><div className="case-content"><p className="case-kicker">Education · Career pathways</p><h3>Career Guidance and TVET Pathways</h3><p className="case-lead">Young people cannot choose pathways they have never been helped to see.</p><p>Through collaboration with the Times Group Institute, I developed the TVET pathways section of a career-guidance workbook designed to help young people understand technical and vocational education as a credible route to skills, employment, entrepreneurship and further development.</p><p>I have also facilitated creative design-thinking workshops for students and supported guidance material for teachers helping learners make important career decisions.</p><p className="case-audience">For schools, publishers, education organisations, foundations and career-development programmes.</p><a href="#contact">Collaborate on career development <Arrow /></a></div></article>
 
-        <article className="featured-case">
-          <div className="case-image">
-            <img
-              src="/assets/images/naasei-presenting.webp"
-              alt="NaaSei presenting an alumni programme framework"
-              loading="lazy"
-            />
-            <span className="case-number">01</span>
-          </div>
-
-          <div className="case-copy">
-            <p className="case-kicker">Digital systems · Alumni engagement</p>
-            <h3>Nia</h3>
-
-            <p className="case-subtitle">
-              A purpose-built alumni engagement platform—from idea to a working
-              system.
-            </p>
-
-            <p>
-              Directed the product from concept through deployment, translating
-              the needs of a one-person Alumni Relations Office into a clear
-              operating and engagement tool.
-            </p>
-
-            <div className="case-metrics">
-              <div>
-                <strong>118</strong>
-                <span>alumni records onboarded</span>
-              </div>
-
-              <div>
-                <strong>01</strong>
-                <span>connected engagement system</span>
-              </div>
-            </div>
-
-            <p className="case-tags">Strategy / Product direction / Systems</p>
-          </div>
-        </article>
-
-        <div className="work-grid">
-          <article className="work-card governance-card">
-            <div className="work-card-top">
-              <img
-                src="/assets/icons/NaaSei_Icon_Systems.svg"
-                alt=""
-                aria-hidden="true"
-              />
-              <span>02</span>
-            </div>
-
-            <div>
-              <p className="case-kicker">Institution design</p>
-              <h3>Governance that can outlive the founder.</h3>
-              <p>
-                A nine-document governance suite for the DTI Alumni Network,
-                including an 18-seat advisory council and a dual-subgroup model.
-              </p>
-            </div>
-
-            <dl>
-              <div>
-                <dt>9</dt>
-                <dd>governance documents</dd>
-              </div>
-
-              <div>
-                <dt>18</dt>
-                <dd>council seats designed</dd>
-              </div>
-            </dl>
-          </article>
-
-          <article className="work-card community-card">
-            <div className="community-image">
-              <img
-                src="/assets/images/naasei-community.webp"
-                alt="NaaSei in conversation with young people"
-                loading="lazy"
-              />
-            </div>
-
-            <div className="community-card-copy">
-              <div className="work-card-top">
-                <img
-                  src="/assets/icons/NaaSei_Icon_Community.svg"
-                  alt=""
-                  aria-hidden="true"
-                />
-                <span>03</span>
-              </div>
-
-              <p className="case-kicker">Youth voices &amp; agency</p>
-              <h3>Making room for young people to shape TVET.</h3>
-              <p>
-                Leading Component 4 of the DTI × Mastercard Foundation
-                partnership through programmes, reporting and platforms that
-                move youth from participants to co-authors.
-              </p>
-            </div>
-          </article>
-
-          <article className="work-card muhalli-card">
-            <div className="muhalli-symbol" aria-hidden="true">
-              <img
-                src="/assets/brand/NaaSei_Adinkrahene_Gold.svg"
-                alt=""
-              />
-            </div>
-
-            <div className="work-card-top">
-              <img
-                src="/assets/icons/NaaSei_Icon_Innovation.svg"
-                alt=""
-                aria-hidden="true"
-              />
-              <span>04</span>
-            </div>
-
-            <div>
-              <p className="case-kicker">Circular design · Enterprise</p>
-              <h3>Muhalli Design Studio</h3>
-              <p>
-                Building products and prototypes around Plasture™—recycled
-                plastic composite boards designed to turn waste into useful,
-                lasting objects.
-              </p>
-            </div>
-
-            <p className="case-tags">
-              Product design / Prototyping / Partnerships
-            </p>
-          </article>
-        </div>
+        <article className="case case-muhalli"><div className="case-image muhalli-case-image"><img src="/assets/images/muhalli-prototypes.webp" alt="Physical product prototypes in the Muhalli workshop" loading="lazy" /><span>03</span></div><div className="case-content"><p className="case-kicker">Product development · Manufacturing</p><h3>Muhalli Design Studio</h3><p className="case-lead">Turning physical-product ideas into something that can be tested, improved and produced.</p><p>Muhalli helps startups, innovation hubs, research teams and organisations move through the product journey—from idea and design to prototype and production.</p><div className="case-path">Idea → Design → Prototype → Production</div><ul><li>Product-design support</li><li>Prototype development</li><li>Manufacturing support</li><li>Workshop and equipment services</li><li>Circular-material exploration</li></ul><a href="#contact">Build with Muhalli <Arrow /></a></div></article>
       </section>
 
-      <section className="axes" aria-labelledby="axes-title">
-        <div className="axes-intro">
-          <div className="section-label inverse-label">
-            <span>05</span>
-            <p>The through-line</p>
-          </div>
+      <section className="experience" aria-labelledby="experience-title"><div className="section-label"><span>05</span><p>Contribution, not titles</p></div><div className="experience-intro"><h2 id="experience-title">I measure experience by<span>what I help move forward.</span></h2><p>My work has taken me from startup pitch rooms and youth workshops to institutional strategy, corporate events and long-term mentoring.</p></div><div className="experience-grid"><article><strong>50+</strong><h3>Student entrepreneurs coached</h3><p>Supporting founders to clarify their ideas, structure their pitches and communicate venture value with confidence.</p></article><article><strong>100+</strong><h3>Startup pitches evaluated</h3><p>Judging business ideas across competitions and providing feedback on the problem, market, model, feasibility and story.</p></article><article><strong>3</strong><h3>Startups actively mentored</h3><p>Supporting ventures in the DTI Innovation Hub with positioning, pitch development, business thinking and growth decisions.</p></article><article><strong>Rooms</strong><h3>Designed and led</h3><p>Design-thinking workshops, leadership and strategy Thinking Labs, corporate MC engagements and moderated conversations.</p></article></div></section>
 
-          <h2 id="axes-title">
-            One life.
-            <span>Three commitments.</span>
-          </h2>
-        </div>
+      <section className="ventures" id="ventures" aria-labelledby="ventures-title"><div className="ventures-heading"><div className="section-label light-label"><span>06</span><p>Different doors. One NaaSei.</p></div><h2 id="ventures-title">Choose the conversation that matches what you are building.</h2></div><div className="venture-grid"><article className="venture-professional"><span>Professional practice</span><h3>Work with NaaSei</h3><p>For organisations, startups, development partners and event organisers that need strategy, business development, communication, facilitation or a capable person to help move important work forward.</p><ul><li>Strategy and programme development</li><li>Business and entrepreneurship support</li><li>Marketing, communication and storytelling</li><li>Workshops, corporate MC and moderation</li><li>Digital and AI-enabled workflows</li></ul><a href="#contact">Start a professional conversation <Arrow /></a></article><article className="venture-muhalli"><span>Product venture</span><h3>Muhalli Design Studio</h3><p>For startups and organisations developing physical products. Muhalli supports the journey from idea through design and prototyping toward production.</p><div>Idea → Design → Prototype → Production</div><a href="#contact">Build with Muhalli <Arrow /></a></article><article className="venture-nakuwa"><span>Transformation community</span><h3>Nakuwa</h3><p>For young people who know they are capable of more but need honest relationships, exposure, direction and accountability around them.</p><blockquote>You do not need to have your entire life figured out. But you should become intentional about who you are becoming.</blockquote><a href={nakuwaForm} target="_blank" rel="noopener noreferrer">Join Nakuwa <Arrow /></a></article></div></section>
 
-        <div className="axes-grid">
-          <article>
-            <img
-              src="/assets/icons/NaaSei_Icon_Innovation.svg"
-              alt=""
-              aria-hidden="true"
-            />
-            <span>01</span>
-            <h3>Innovation</h3>
-            <p>
-              Build new tools, products and systems where inherited approaches
-              limit possibility.
-            </p>
-          </article>
+      <section className="purpose" aria-labelledby="purpose-title"><div className="purpose-mark" aria-hidden="true"><img src="/assets/brand/NaaSei_Adinkrahene_Maroon.svg" alt="" /></div><div className="section-label"><span>07</span><p>Why it all belongs together</p></div><div className="purpose-grid"><div><h2 id="purpose-title">This is bigger than a professional career.</h2><p className="purpose-lead">I exist to expand what young Africans believe is possible for themselves—through how I live, what I build and what I am willing to say out loud.</p></div><div className="purpose-statements"><article><span>Core belief</span><h3>The gap is not simply talent. It is often design.</h3><p>Human potential is greater than many systems allow. Limited framing, absent access and weak pathways can keep real ability from becoming visible progress.</p></article><article><span>Vision</span><h3>A generation that measures life by what it chose to build—not only by what the system assigned.</h3></article><article><span>Mission</span><h3>Through strategy, enterprise, communication and community, I help people and organisations turn overlooked potential into visible progress.</h3></article></div></div><div className="legacy"><span>The Legacy Game</span><p>What continues without me? Whose life becomes larger because I existed? What value remains after I leave the room?</p><strong>Significance over appearance. Contribution over applause.</strong></div></section>
 
-          <article>
-            <img
-              src="/assets/icons/NaaSei_Icon_Purpose.svg"
-              alt=""
-              aria-hidden="true"
-            />
-            <span>02</span>
-            <h3>Purpose</h3>
-            <p>
-              Keep faith, service and human consequence at the centre of every
-              ambitious decision.
-            </p>
-          </article>
+      <section className="contact" id="contact" aria-labelledby="contact-title"><div className="contact-topline"><span>Accra, Ghana</span><span>Available for work and partnerships across Africa and internationally</span></div><div className="contact-grid"><div><p className="contact-kicker">Start a conversation</p><h2 id="contact-title">What are you trying<span>to move forward?</span></h2></div><div className="contact-action"><p>If you are building meaningful work and need clarity, structure, communication or a capable person to help move it forward, I would be glad to hear from you.</p><div className="contact-options"><span>Organisations</span><span>Entrepreneurs</span><span>Event organisers</span><span>Development partners</span></div><a className="email-link" href="mailto:oseiaboagyemichael@gmail.com">oseiaboagyemichael@gmail.com <Arrow /></a><div className="contact-links"><a href="https://www.linkedin.com/in/michael-aboagye" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <Arrow /></a><a href={nakuwaForm} target="_blank" rel="noopener noreferrer">Join Nakuwa <Arrow /></a></div></div></div></section>
 
-          <article>
-            <img
-              src="/assets/icons/NaaSei_Icon_Leadership.svg"
-              alt=""
-              aria-hidden="true"
-            />
-            <span>03</span>
-            <h3>Leadership</h3>
-            <p>
-              Create the conditions for people to become—and structures that
-              remain useful after you leave.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section className="ideas" id="ideas" aria-labelledby="ideas-title">
-        <div className="ideas-heading">
-          <div className="section-label">
-            <span>06</span>
-            <p>Ideas in progress</p>
-          </div>
-
-          <h2 id="ideas-title">
-            Thinking
-            <span>out loud.</span>
-          </h2>
-
-          <p>
-            Notes, frameworks and questions from the work of becoming—and
-            helping others become.
-          </p>
-        </div>
-
-        <div className="ideas-list">
-          <article>
-            <span className="idea-index">01</span>
-            <div>
-              <p>Framework</p>
-              <h3>The gap is not talent. It is design.</h3>
-            </div>
-            <span className="idea-status">In progress</span>
-          </article>
-
-          <article>
-            <span className="idea-index">02</span>
-            <div>
-              <p>Field note</p>
-              <h3>What TVET taught me about becoming.</h3>
-            </div>
-            <span className="idea-status">In progress</span>
-          </article>
-
-          <article>
-            <span className="idea-index">03</span>
-            <div>
-              <p>Essay</p>
-              <h3>Build the institution, not the dependency.</h3>
-            </div>
-            <span className="idea-status">In progress</span>
-          </article>
-        </div>
-      </section>
-
-      <section className="rally" aria-label="Community rally">
-        <img
-          src="/assets/brand/NaaSei_Adinkrahene_Maroon.svg"
-          alt=""
-          aria-hidden="true"
-        />
-        <p>I become.</p>
-        <span />
-        <p>We become.</p>
-      </section>
-
-      <section className="contact" id="contact" aria-labelledby="contact-title">
-        <div className="contact-topline">
-          <span>Accra, Ghana</span>
-          <span>Open to meaningful collaborations</span>
-        </div>
-
-        <div className="contact-grid">
-          <div>
-            <p className="contact-kicker">Start a conversation</p>
-            <h2 id="contact-title">
-              Let&apos;s build what
-              <span>outlives us.</span>
-            </h2>
-          </div>
-
-          <div className="contact-action">
-            <p>
-              Reach out for institutional strategy, youth programmes, systems
-              design, speaking, partnerships or a serious idea worth building.
-            </p>
-
-            <a
-              className="email-link"
-              href="mailto:oseiaboagyemichael@gmail.com"
-            >
-              oseiaboagyemichael@gmail.com <Arrow />
-            </a>
-
-            <a
-              className="linkedin-link"
-              href="https://www.linkedin.com/in/michael-aboagye"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Connect on LinkedIn <Arrow />
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <footer className="site-footer">
-        <a className="footer-brand" href="#home" aria-label="Back to top">
-          <img
-            src="/assets/brand/NaaSei_Primary_Horizontal_Ivory.svg"
-            alt="NaaSei"
-          />
-        </a>
-
-        <p>Innovation · Purpose · Leadership</p>
-        <p>Build beyond your beginning.</p>
-        <span>© 2026 NaaSei</span>
-      </footer>
+      <footer className="site-footer"><a className="footer-brand" href="#home" aria-label="Back to top"><img src="/assets/brand/NaaSei_Primary_Horizontal_Ivory.svg" alt="NaaSei" /></a><p>Strategy · Innovation · Communication</p><p>Innovation · Purpose · Leadership</p><span>© 2026 NaaSei</span></footer>
     </main>
   );
 }
