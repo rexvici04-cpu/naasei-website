@@ -12,20 +12,6 @@ export default function Home() {
             />
           </a>
 
-          <div className="header-actions">
-  <a className="header-contact" href="#contact">
-    Start a conversation
-  </a>
-
-  <a
-    className="header-cta"
-    href="https://docs.google.com/forms/d/e/1FAIpQLScN51Mf8s36dlDEeCgwS4Eaq2Qy_LbVR2wi6epASZLfdOGFcg/viewform"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Join Nakuwa <Arrow />
-  </a>
-</div>
           <nav className="desktop-nav" aria-label="Primary navigation">
             <a href="#about">About</a>
             <a href="#work">Work</a>
@@ -37,75 +23,38 @@ export default function Home() {
             <summary>
               Menu <span aria-hidden="true">+</span>
             </summary>
+
             <nav aria-label="Mobile navigation">
               <a href="#about">About</a>
               <a href="#work">Work</a>
               <a href="#ideas">Ideas</a>
-              <a href="#contact">
-  Start a conversation
-</a>
+              <a href="#contact">Start a conversation</a>
 
-<a
-  href="https://docs.google.com/forms/d/e/1FAIpQLScN51Mf8s36dlDEeCgwS4Eaq2Qy_LbVR2wi6epASZLfdOGFcg/viewform"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Join Nakuwa <Arrow />
-</a>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScN51Mf8s36dlDEeCgwS4Eaq2Qy_LbVR2wi6epASZLfdOGFcg/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Join Nakuwa <Arrow />
+              </a>
             </nav>
           </details>
 
-         <header className="site-header">
-  <a className="brand" href="#home" aria-label="NaaSei — home">
-    <img
-      src="/assets/brand/NaaSei_Primary_Horizontal_Ivory.svg"
-      alt="NaaSei"
-    />
-  </a>
+          <div className="header-actions">
+            <a
+              className="header-join"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScN51Mf8s36dlDEeCgwS4Eaq2Qy_LbVR2wi6epASZLfdOGFcg/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Join Nakuwa <Arrow />
+            </a>
 
-  <nav className="desktop-nav" aria-label="Primary navigation">
-    <a href="#about">About</a>
-    <a href="#work">Work</a>
-    <a href="#ideas">Ideas</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <details className="mobile-menu">
-    <summary>
-      Menu <span aria-hidden="true">+</span>
-    </summary>
-
-    <nav aria-label="Mobile navigation">
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
-      <a href="#ideas">Ideas</a>
-      <a href="#contact">Start a conversation</a>
-
-      <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLScN51Mf8s36dlDEeCgwS4Eaq2Qy_LbVR2wi6epASZLfdOGFcg/viewform"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Join Nakuwa <Arrow />
-      </a>
-    </nav>
-  </details>
-
-  <div className="header-actions">
-    <a
-      className="header-join"
-      href="https://docs.google.com/forms/d/e/1FAIpQLScN51Mf8s36dlDEeCgwS4Eaq2Qy_LbVR2wi6epASZLfdOGFcg/viewform"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Join Nakuwa <Arrow />
-    </a>
-
-    <a className="header-cta" href="#contact">
-      Start a conversation <Arrow />
-    </a>
-  </div>
-</header>
+            <a className="header-cta" href="#contact">
+              Start a conversation <Arrow />
+            </a>
+          </div>
+        </header>
 
         <div className="hero-grid">
           <div className="hero-copy">
@@ -113,18 +62,22 @@ export default function Home() {
               <span />
               Innovation · Purpose · Leadership
             </p>
+
             <h1 id="hero-title">
               Build beyond
               <em>your beginning.</em>
             </h1>
+
             <p className="hero-summary">
               I build leverage for people and organisations capable of more
               than their current conditions allow.
             </p>
+
             <div className="hero-actions">
               <a className="button button-gold" href="#work">
                 Explore the work <Arrow />
               </a>
+
               <a className="text-link" href="#about">
                 Read my story <span aria-hidden="true">↓</span>
               </a>
@@ -138,6 +91,7 @@ export default function Home() {
                 alt=""
               />
             </div>
+
             <div className="portrait-frame">
               <img
                 className="hero-portrait"
@@ -145,6 +99,7 @@ export default function Home() {
                 alt="NaaSei in a dark suit, standing with his arms folded"
               />
             </div>
+
             <div className="proof-note">
               <span className="proof-index">01</span>
               <p>
@@ -162,43 +117,54 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="manifesto" id="about" aria-labelledby="manifesto-title">
+      <section
+        className="manifesto"
+        id="about"
+        aria-labelledby="manifesto-title"
+      >
         <div className="section-label">
           <span>02</span>
           <p>The belief</p>
         </div>
+
         <div className="manifesto-content">
           <h2 id="manifesto-title">
             Your beginning is context.
             <span>Not destiny.</span>
           </h2>
+
           <div className="manifesto-detail">
             <p>
               Human potential is far greater than most systems allow. The gap
               between what young Africans can do and what they achieve is not a
               talent deficit. It is a design problem.
             </p>
+
             <a className="text-link dark-link" href="#work">
               See how I build leverage <Arrow />
             </a>
           </div>
         </div>
+
         <div className="manifesto-proof">
           <article>
             <span>01</span>
             <h3>Craft</h3>
             <p>TVET-trained in welding and fabrication.</p>
           </article>
+
           <article>
             <span>02</span>
             <h3>Systems</h3>
             <p>Governance, platforms and programmes built beyond title.</p>
           </article>
+
           <article>
             <span>03</span>
             <h3>Enterprise</h3>
             <p>Muhalli, Plasture™ and product ideas made tangible.</p>
           </article>
+
           <article>
             <span>04</span>
             <h3>Legacy</h3>
@@ -214,6 +180,7 @@ export default function Home() {
             alt="NaaSei speaking to a group in Accra"
             loading="lazy"
           />
+
           <div className="story-caption">
             <span>Konongo → Accra</span>
             <p>Grace. Hunger. Work.</p>
@@ -225,28 +192,34 @@ export default function Home() {
             <span>03</span>
             <p>The story</p>
           </div>
+
           <h2 id="story-title">
             Welding shaped
             <span>the way I lead.</span>
           </h2>
+
           <p className="story-lead">
             Before the boardroom, there was the workshop: heat, measurement,
             repetition and the humility to begin again.
           </p>
+
           <p>
             I came through technical and vocational education before university.
             That journey taught me that potential is often present long before
             opportunity can see it. Today, I carry the maker&apos;s discipline
             into governance, programme design, technology and enterprise.
           </p>
+
           <blockquote>
             “I am proof that where you start does not determine where you land.”
           </blockquote>
+
           <div className="story-signature">
             <div>
               <strong>Michael Osei Aboagye</strong>
               <span>NaaSei · Rex</span>
             </div>
+
             <img
               src="/assets/brand/NaaSei_Adinkrahene_Gold.svg"
               alt=""
@@ -262,10 +235,12 @@ export default function Home() {
             <span>04</span>
             <p>Selected work</p>
           </div>
+
           <h2 id="work-title">
             Leverage,
             <span>made visible.</span>
           </h2>
+
           <p>
             I work where people, systems and possibility meet—turning ambiguity
             into structures that can move.
@@ -281,28 +256,34 @@ export default function Home() {
             />
             <span className="case-number">01</span>
           </div>
+
           <div className="case-copy">
             <p className="case-kicker">Digital systems · Alumni engagement</p>
             <h3>Nia</h3>
+
             <p className="case-subtitle">
               A purpose-built alumni engagement platform—from idea to a working
               system.
             </p>
+
             <p>
               Directed the product from concept through deployment, translating
               the needs of a one-person Alumni Relations Office into a clear
               operating and engagement tool.
             </p>
+
             <div className="case-metrics">
               <div>
                 <strong>118</strong>
                 <span>alumni records onboarded</span>
               </div>
+
               <div>
                 <strong>01</strong>
                 <span>connected engagement system</span>
               </div>
             </div>
+
             <p className="case-tags">Strategy / Product direction / Systems</p>
           </div>
         </article>
@@ -317,6 +298,7 @@ export default function Home() {
               />
               <span>02</span>
             </div>
+
             <div>
               <p className="case-kicker">Institution design</p>
               <h3>Governance that can outlive the founder.</h3>
@@ -325,11 +307,13 @@ export default function Home() {
                 including an 18-seat advisory council and a dual-subgroup model.
               </p>
             </div>
+
             <dl>
               <div>
                 <dt>9</dt>
                 <dd>governance documents</dd>
               </div>
+
               <div>
                 <dt>18</dt>
                 <dd>council seats designed</dd>
@@ -345,6 +329,7 @@ export default function Home() {
                 loading="lazy"
               />
             </div>
+
             <div className="community-card-copy">
               <div className="work-card-top">
                 <img
@@ -354,6 +339,7 @@ export default function Home() {
                 />
                 <span>03</span>
               </div>
+
               <p className="case-kicker">Youth voices &amp; agency</p>
               <h3>Making room for young people to shape TVET.</h3>
               <p>
@@ -371,6 +357,7 @@ export default function Home() {
                 alt=""
               />
             </div>
+
             <div className="work-card-top">
               <img
                 src="/assets/icons/NaaSei_Icon_Innovation.svg"
@@ -379,6 +366,7 @@ export default function Home() {
               />
               <span>04</span>
             </div>
+
             <div>
               <p className="case-kicker">Circular design · Enterprise</p>
               <h3>Muhalli Design Studio</h3>
@@ -388,7 +376,10 @@ export default function Home() {
                 lasting objects.
               </p>
             </div>
-            <p className="case-tags">Product design / Prototyping / Partnerships</p>
+
+            <p className="case-tags">
+              Product design / Prototyping / Partnerships
+            </p>
           </article>
         </div>
       </section>
@@ -399,11 +390,13 @@ export default function Home() {
             <span>05</span>
             <p>The through-line</p>
           </div>
+
           <h2 id="axes-title">
             One life.
             <span>Three commitments.</span>
           </h2>
         </div>
+
         <div className="axes-grid">
           <article>
             <img
@@ -418,6 +411,7 @@ export default function Home() {
               limit possibility.
             </p>
           </article>
+
           <article>
             <img
               src="/assets/icons/NaaSei_Icon_Purpose.svg"
@@ -431,6 +425,7 @@ export default function Home() {
               ambitious decision.
             </p>
           </article>
+
           <article>
             <img
               src="/assets/icons/NaaSei_Icon_Leadership.svg"
@@ -453,10 +448,12 @@ export default function Home() {
             <span>06</span>
             <p>Ideas in progress</p>
           </div>
+
           <h2 id="ideas-title">
             Thinking
             <span>out loud.</span>
           </h2>
+
           <p>
             Notes, frameworks and questions from the work of becoming—and
             helping others become.
@@ -472,6 +469,7 @@ export default function Home() {
             </div>
             <span className="idea-status">In progress</span>
           </article>
+
           <article>
             <span className="idea-index">02</span>
             <div>
@@ -480,6 +478,7 @@ export default function Home() {
             </div>
             <span className="idea-status">In progress</span>
           </article>
+
           <article>
             <span className="idea-index">03</span>
             <div>
@@ -507,6 +506,7 @@ export default function Home() {
           <span>Accra, Ghana</span>
           <span>Open to meaningful collaborations</span>
         </div>
+
         <div className="contact-grid">
           <div>
             <p className="contact-kicker">Start a conversation</p>
@@ -515,22 +515,25 @@ export default function Home() {
               <span>outlives us.</span>
             </h2>
           </div>
+
           <div className="contact-action">
             <p>
               Reach out for institutional strategy, youth programmes, systems
               design, speaking, partnerships or a serious idea worth building.
             </p>
+
             <a
               className="email-link"
               href="mailto:oseiaboagyemichael@gmail.com"
             >
               oseiaboagyemichael@gmail.com <Arrow />
             </a>
+
             <a
               className="linkedin-link"
               href="https://www.linkedin.com/in/michael-aboagye"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               Connect on LinkedIn <Arrow />
             </a>
@@ -545,6 +548,7 @@ export default function Home() {
             alt="NaaSei"
           />
         </a>
+
         <p>Innovation · Purpose · Leadership</p>
         <p>Build beyond your beginning.</p>
         <span>© 2026 NaaSei</span>
